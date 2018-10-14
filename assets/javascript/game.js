@@ -30,6 +30,7 @@ var losses = 0;
 var gameStart;
 var gameOver; 
 
+
 // Function that resets the screen
 // Block the text for win/lose results
 function beginGame() {
@@ -107,28 +108,28 @@ function guessLetter(pressedLetter) {
 function checkLetter(pressedLetter) {
 
 // Array for letters in word 
-var placeInWord = [];
+var place = [];
 
 // Run through the word to see if the letters are repeating 
 for (var i = 0; i < choices[selectedWord].length; i++) {
     if(choices[selectedWord][i] === pressedLetter) {
-        placeInWord.push(i);
+        place.push(i);
     }
 }
 
 // In case the guess is wrong take out one life 
-if (placeInWord.length <= 0) {
+if (place.length <= 0) {
     remainingLives--;
 } else {
     // If the guess is right update the letter in the word
-    for(var i = 0; i < placeInWord.length; i++) {
-        selectedWord[positions[i]] = pressedLetter;
+    for(var i = 0; i < place.length; i++) {
+        wordInProgress[place[i]] = pressedLetter;
     }
 }
 };
 
 function checkWord() {
-if(selectedWord.indexOf(" * ") === -1) {
+if(wordInProgress.indexOf(" * ") === -1) {
     document.getElementById("youWin").style.display = "block";
     document.getElementById("pressTryAgain").style.display = "block";
     wins++;

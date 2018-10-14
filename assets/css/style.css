@@ -1,0 +1,61 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #333333;
+    background: url("../images/hpbackground.png");
+}
+
+.container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #888888;
+    width: 100%;
+    max-width: 800px;
+    border-color: #777777;
+    border: 2px solid;
+    text-align: center;
+}
+
+.col-md-6{
+    border-color: #777777;
+    border-top: 1px solid;
+}
+
+img{
+    padding-top: 20px;
+    height: 150px;
+}
+
+h2{
+    font-size: 20px;
+    line-height: 20px;
+    padding: 5px;
+}
+
+h3{
+    font-size: 18px;
+    line-height: 20px;
+    padding: 5px;
+}
+
+h4{
+    font-size: 15px;
+    line-height: 20px;
+    padding: 5px;
+}
+
+h5{
+    font-size: 13px;
+}
+
+#youLose, #youWin{
+    margin-top: 20px;
+}
+
+#wordimthinkingof{
+    margin-top: 20px;
+}
+
+
+

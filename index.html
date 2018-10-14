@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>Harry Potter Word Guess Game</title>
+</head>
+<body>
+ 	<link rel="stylesheet" href="assets/css/reset.css">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/javascript/game.js"> </script> 
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 id="title"> Welcome, Wizard </h1>
+				<h2 id="message">Today You Have a Unique Opportunity to Check Your Legilimency Skills</h2>
+				<h3>Wave Your Wand to Begin</h3>
+				<h5>(press any key to start)</h5>
+					<div class="row">
+
+						<div class="col-md-6">
+							<h3 id="wordimthinkingof">Word I'm Thinking of:</h3>
+							<h4 id="wordInPlay"></h4>
+							<h3>Guesses Left:</h3>
+							<h4 id="guessesAvailable"></h4>
+							<h3>You Already Guessed These:</h3>
+							<h4 id="userGuesses"></h4>
+							<h3>Wins:</h3>
+							<h4 id="win"></h4>
+							<h3>Losses:</h3>
+							<h4 id="lose"></h4>
+						</div>
+
+						<div class="col-md-6">
+								<img src="assets/images/hogwarts.png" class="hogwarts" alt="Hogwarts crest">
+								<h3 id="youWin">Great Job! Professor Snape Would Be Proud of You!</h3>
+								<h3 id="youLose">Oh No! Better Luck Next Time!</h3>
+								<h3 id="pressTryAgain">Press Any Key to Try Again!</h3>
+						</div>
+
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		beginGame();
+        screenUpdates();
+	</script> 
+
+</body>
+</html>
